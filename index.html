@@ -163,6 +163,8 @@
   .svc-item .no{font-family:var(--serif);font-size:.95rem;color:var(--mocha);letter-spacing:.1em}
   .svc-item h3{font-size:1.3rem;margin:10px 0 8px;color:var(--espresso)}
   .svc-item.svc-plain h3{margin-bottom:0}
+  .svc-item.svc-plain .svc-toggle{margin-top:12px}
+  .svc-item.svc-plain .more h4{margin-top:0}
   .svc-item.svc-fill{background:var(--porcelain);padding:0}
   .svc-item.svc-fill:hover{background:var(--porcelain)}
   .svc-item p{font-size:.9rem;color:var(--cocoa);line-height:1.55}
@@ -393,7 +395,21 @@
 
     <div class="svc-panel reveal" id="nonsurgical">
       <div class="svc-item svc-plain"><div class="no">01</div><h3 data-i18n="n1t">Anti-Wrinkle Injections</h3></div>
-      <div class="svc-item svc-plain"><div class="no">02</div><h3 data-i18n="n2t">Dermal Fillers</h3></div>
+      <div class="svc-item svc-plain"><div class="no">02</div><h3 data-i18n="n2t">Dermal Fillers</h3>
+        <button class="svc-toggle" data-i18n="more_btn">More</button>
+        <div class="more">
+          <h4 data-i18n="lbl_areas">Areas &amp; volumes</h4>
+          <ul>
+            <li data-i18n="n2l1">Lip (0.55ml)</li>
+            <li data-i18n="n2l2">Lip (1ml)</li>
+            <li data-i18n="n2l3">Perioral</li>
+            <li data-i18n="n2l4">Tear Trough</li>
+            <li data-i18n="n2l5">Cheeks / Temple</li>
+            <li data-i18n="n2l6">Body Contouring (10ml)</li>
+            <li data-i18n="n2l7">Liquid Rhinoplasty</li>
+          </ul>
+        </div>
+      </div>
       <div class="svc-item svc-plain"><div class="no">03</div><h3 data-i18n="n3t">Exilis — RF &amp; Ultrasound</h3></div>
       <div class="svc-item svc-plain"><div class="no">04</div><h3 data-i18n="n4t">Lipolysis Injections</h3></div>
       <div class="svc-item svc-plain"><div class="no">05</div><h3 data-i18n="n5t">PRX</h3></div>
@@ -613,6 +629,7 @@
     en:{
       ba_c1:"Case 01",ba_c2:"Case 02",ba_c3:"Case 03",ba_c4:"Case 04",ba_c5:"Case 05",
       lbl_addr:"What it addresses",lbl_suits:"Who it suits",lbl_know:"Good to know",
+      lbl_areas:"Areas & volumes",
       more_btn:"More",less_btn:"Less",nav_res:"Results",
       ba_eyebrow:"Results",ba_h2:"Before & after",ba_sub:"A selection of Dr. Korfiati's work.",ba_before:"Before",ba_after:"After",
       ba_note:"Individual results vary from person to person.",
@@ -647,7 +664,7 @@
       tab1:"Aesthetic",tab2:"Reconstructive",tab3:"Non-Surgical",
       a1t:"Rhinoplasty",a1d:"Reshaping the nose in facial harmony.",a2t:"Breast Surgery",a2d:"Augmentation, lift & reduction.",a3t:"Liposuction",a3d:"Body contouring for a smoother line.",a4t:"Abdominoplasty",a4d:"Tightening the abdomen.",a5t:"Facelift & Blepharoplasty",a5d:"Facelift and blepharoplasty.",a6t:"Otoplasty & Gynecomastia",a6d:"Ear reshaping & gynecomastia.",
       r1t:"Breast Reconstruction",r1d:"After mastectomy or trauma.",r2t:"Scar Revision",r2d:"Improving surgical & injury scars.",r3t:"Skin Lesions & Skin Cancer",r3d:"Removal with aesthetic repair.",r4t:"Hand Surgery",r4d:"Injuries & conditions of the hand.",r5t:"Post-Trauma Repair",r5d:"Restoring form & movement.",r6t:"Wound Care",r6d:"Complex & slow-healing wounds.",
-      n7t:"Lymphatic Massage",n8t:"Hair Treatments",n1t:"Anti-Wrinkle Injections",n1d:"",n2t:"Dermal Fillers",n2d:"Restoring volume & definition.",n3t:"Exilis — RF & Ultrasound",n3d:"Skin & hair renewal.",n4t:"Lipolysis Injections",n4d:"Fat reduction & skin tightening.",n5t:"PRX",n5d:"Brighter skin tone & texture.",n6t:"Facial Treatments",n6d:"A tailored long-term plan.",
+      n7t:"Lymphatic Massage",n8t:"Hair Treatments",n1t:"Anti-Wrinkle Injections",n1d:"",n2t:"Dermal Fillers",n2l1:"Lip (0.55ml)",n2l2:"Lip (1ml)",n2l3:"Perioral",n2l4:"Tear Trough",n2l5:"Cheeks / Temple",n2l6:"Body Contouring (10ml)",n2l7:"Liquid Rhinoplasty",n2d:"Restoring volume & definition.",n3t:"Exilis — RF & Ultrasound",n3d:"Skin & hair renewal.",n4t:"Lipolysis Injections",n4d:"Fat reduction & skin tightening.",n5t:"PRX",n5d:"Brighter skin tone & texture.",n6t:"Facial Treatments",n6d:"A tailored long-term plan.",
       app_eyebrow:"The experience",app_h2:"From first message to recovery",app_sub:"A clear path, always personal.",
       s1t:"Reach out",s1d:"Message on WhatsApp.",s2t:"Consultation",s2d:"Meet and plan together.",s3t:"Procedure",s3d:"Safe, accredited care.",s4t:"Aftercare",s4d:"Personal follow-up.",
       rev_eyebrow:"Reviews",rev_h2:"What patients say",rev_sub:"Verified Google reviews",
@@ -664,6 +681,7 @@
     el:{
       ba_c1:"Περιστατικό 01",ba_c2:"Περιστατικό 02",ba_c3:"Περιστατικό 03",ba_c4:"Περιστατικό 04",ba_c5:"Περιστατικό 05",
       lbl_addr:"Τι αντιμετωπίζει",lbl_suits:"Σε ποιους ταιριάζει",lbl_know:"Καλό να γνωρίζετε",
+      lbl_areas:"Περιοχές & όγκοι",
       more_btn:"Περισσότερα",less_btn:"Λιγότερα",nav_res:"Αποτελέσματα",
       ba_eyebrow:"Αποτελέσματα",ba_h2:"Πριν & μετά",ba_sub:"Μια επιλογή από τη δουλειά της Δρ. Korfiati.",ba_before:"Πριν",ba_after:"Μετά",
       ba_note:"Τα αποτελέσματα διαφέρουν από άτομο σε άτομο.",
@@ -698,7 +716,7 @@
       tab1:"Αισθητική",tab2:"Επανορθωτική",tab3:"Μη Χειρουργικά",
       a1t:"Ρινοπλαστική",a1d:"Αναδιαμόρφωση μύτης σε αρμονία με το πρόσωπο.",a2t:"Χειρουργική Στήθους",a2d:"Αυξητική, ανόρθωση & μειωτική.",a3t:"Λιποαναρρόφηση",a3d:"Γλυπτική σώματος για πιο λείο περίγραμμα.",a4t:"Κοιλιοπλαστική",a4d:"Σύσφιξη της κοιλιάς.",a5t:"Ρυτιδοπλαστική & Βλεφαροπλαστική",a5d:"Ρυτιδοπλαστική και βλεφαροπλαστική.",a6t:"Ωτοπλαστική & Γυναικομαστία",a6d:"Αναδιαμόρφωση αυτιών & γυναικομαστία.",
       r1t:"Αποκατάσταση Μαστού",r1d:"Μετά από μαστεκτομή ή τραυματισμό.",r2t:"Διόρθωση Ουλών",r2d:"Βελτίωση χειρουργικών ουλών & τραυμάτων.",r3t:"Δερματικές Βλάβες & Καρκίνος Δέρματος",r3d:"Αφαίρεση με αισθητική αποκατάσταση.",r4t:"Χειρουργική Άκρας Χειρός",r4d:"Τραυματισμοί & παθήσεις χεριού.",r5t:"Μετατραυματική Αποκατάσταση",r5d:"Αποκατάσταση μορφής & κίνησης.",r6t:"Φροντίδα Τραυμάτων",r6d:"Σύνθετα & δυσεπούλωτα τραύματα.",
-      n7t:"Λεμφικό Μασάζ",n8t:"Θεραπείες Μαλλιών",n1t:"Αντιρυτιδικές Ενέσεις",n1d:"",n2t:"Ενέσιμα Fillers",n2d:"Αποκατάσταση όγκου & περιγράμματος.",n3t:"Exilis — Ραδιοσυχνότητες & Υπέρηχοι",n3d:"Ανανέωση δέρματος & μαλλιών.",n4t:"Ενέσεις Λιπόλυσης",n4d:"Μείωση λίπους & σύσφιξη δέρματος.",n5t:"PRX",n5d:"Λαμπερή όψη & υφή δέρματος.",n6t:"Θεραπείες Προσώπου",n6d:"Εξατομικευμένο μακροχρόνιο πλάνο.",
+      n7t:"Λεμφικό Μασάζ",n8t:"Θεραπείες Μαλλιών",n1t:"Αντιρυτιδικές Ενέσεις",n1d:"",n2t:"Ενέσιμα Fillers",n2l1:"Χείλη (0.55ml)",n2l2:"Χείλη (1ml)",n2l3:"Περιστοματική περιοχή",n2l4:"Δακρυϊκή αύλακα",n2l5:"Ζυγωματικά / Κρόταφοι",n2l6:"Γλυπτική σώματος (10ml)",n2l7:"Μη χειρουργική ρινοπλαστική",n2d:"Αποκατάσταση όγκου & περιγράμματος.",n3t:"Exilis — Ραδιοσυχνότητες & Υπέρηχοι",n3d:"Ανανέωση δέρματος & μαλλιών.",n4t:"Ενέσεις Λιπόλυσης",n4d:"Μείωση λίπους & σύσφιξη δέρματος.",n5t:"PRX",n5d:"Λαμπερή όψη & υφή δέρματος.",n6t:"Θεραπείες Προσώπου",n6d:"Εξατομικευμένο μακροχρόνιο πλάνο.",
       app_eyebrow:"Η εμπειρία",app_h2:"Από το πρώτο μήνυμα έως την ανάρρωση",app_sub:"Μια ξεκάθαρη πορεία, πάντα προσωπική.",
       s1t:"Επικοινωνία",s1d:"Στείλτε μήνυμα στο WhatsApp.",s2t:"Ραντεβού",s2d:"Γνωριμία και κοινός σχεδιασμός.",s3t:"Επέμβαση",s3d:"Ασφαλής, πιστοποιημένη φροντίδα.",s4t:"Παρακολούθηση",s4d:"Προσωπική παρακολούθηση.",
       rev_eyebrow:"Κριτικές",rev_h2:"Τι λένε οι ασθενείς",rev_sub:"Επαληθευμένες κριτικές από το Google",
